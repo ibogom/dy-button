@@ -1,0 +1,3 @@
+const OPEN_ACTIONS = 'OPEN_ACTIONS';
+
+export {OPEN_ACTIONS}

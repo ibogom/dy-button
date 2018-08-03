@@ -1,0 +1,102 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url('../assets/fonts/roboto/Roboto-Thin.ttf') format('truetype'),
+  url('../assets/fonts/roboto/Roboto-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto-Regular';
+  src: url('../assets/fonts/roboto/Roboto-Regular.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto-Bold';
+  src: url('../assets/fonts/roboto/Roboto-Bold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'icons';
+  src: url('../assets/fonts/boilerplate/fonts/boilerplate.ttf') format('truetype'),
+  url('../assets/fonts/boilerplate/fonts/boilerplate.woff'),
+  url('../assets/fonts/boilerplate/fonts/boilerplate.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/** HEADER **/
+
+h1, h2, h3 {
+  font-weight: 300;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--font-pr-clr);
+  padding-top: 20px;
+}
+
+::-webkit-input-placeholder {
+  color: var(--font-thrd-clr);
+}
+
+::-moz-placeholder {
+  color: var(--font-thrd-clr);
+}
+
+:-moz-placeholder {
+  color: var(--font-thrd-clr);
+}
+
+:-ms-input-placeholder {
+  color: var(--font-thrd-clr);
+}
+
+:global(.align-left) {
+  text-align: left;
+}
+
+:global(.align-right) {
+  text-align: right;
+}
+
+html, body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  font-family: var(--sans-font-family);
+  font-weight: 300;
+  background-color: var(--pr-clr);
+}
+
+:global{
+  .close {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: -35px;
+    top: -35px;
+    cursor: pointer;
+    &:hover:before {
+      transform: rotate(180deg);
+      transition: 300ms;
+    }
+    &:before {
+      content: var(--i-close);
+      color: var(--font-scnd-clr);
+      text-align: center;
+      display: block;
+      font-size: var(--font-24px);
+      padding: 7px;
+      box-sizing: border-box;
+      font-family: 'icons', sans-serif;
+      transition: 300ms;
+    }
+  }
+}

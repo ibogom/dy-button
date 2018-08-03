@@ -1,0 +1,28 @@
+.popup-dy{
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  z-index: var(--high-index);
+  display: table;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.wrapper{
+  display: table-cell;
+  margin: 0 auto;
+  vertical-align: middle;
+}
+
+.content{
+  position: relative;
+  width: 35rem;
+  height: 25rem;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: var(--pr-clr);
+  border: 2px solid color(var(--pr-clr) blackness(65%));
+}

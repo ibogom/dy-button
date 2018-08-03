@@ -1,0 +1,21 @@
+:global{
+  .btn-dy {
+    border: 0;
+    background-color: var(--third-clr);
+    color: var(--font-scnd-clr);
+    margin: 5px auto;
+    max-width: 9rem;
+    width: 100%;
+    cursor: pointer;
+    border: 2px solid color(var(--third-clr) blackness(65%));
+    &:focus {
+      outline:0;
+    }
+    &:hover{
+      background-color: color(var(--third-clr) lightness(65%))
+    }
+    &.active{
+      background-color: color(var(--third-clr) lightness(65%))
+    }
+  }
+}
